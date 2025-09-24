@@ -83,8 +83,14 @@ to solve
 ## home sweet home
 
 ### Solve
-**Flag** `
+**Flag** `pwn.college{IqTRoEg8329Mr-MWEOicQStop6V.QXzMDO0wCMwEzNzEzW}`
+to solve 
+`cd`
+`challenge/run ~/a`
 
+### New Learnings
+The home directory is where users store most of their personal files.
+cd will use home directory as the default destination.
 
 
 
