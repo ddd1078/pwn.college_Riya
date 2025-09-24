@@ -63,6 +63,31 @@ It is interpreted relative to the current working directory (cwd).
 
 ## explicit relative paths, from /
 
+### Solve
+**Flag** `pwn.college{4dTotZT0S59QpsH6OlCXkFl-eOJ.QXwUTN0wCMwEzNzEzW}`
+to solve
+`cd /`
+`./challenge/run`
+
+### New Learnings
+'.' represents current directory.
+
+## implicit relative path
+
+### Solve
+**Flag** `pwn.college{IHsbCRyTKgm_bFaYtEVeynhya9G.QXxUTN0wCMwEzNzEzW}`
+to solve 
+`cd /challenge`
+`./run`
+
+## home sweet home
+
+### Solve
+**Flag** `
+
+
+
+
 
 
 
