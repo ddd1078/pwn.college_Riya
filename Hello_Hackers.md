@@ -1,6 +1,6 @@
-#Hello Hackers
+# Hello Hackers
 
-##Intro to Commands
+## Intro to Commands
 Learning to use command.
 
 ### Solve
@@ -11,7 +11,7 @@ Learning to use command.
 Command is typed and the system executes and outputs the result. 
 Commands in linux are case sensitive.
 
-##Intro to Arguments
+## Intro to Arguments
 Learning to use argument.
 
 ## Solve
