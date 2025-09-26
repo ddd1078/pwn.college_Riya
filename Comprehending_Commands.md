@@ -1,6 +1,6 @@
 # Comprehending Commands
 
-## cat: not the pet, but the commmand!
+## 1. cat: not the pet, but the commmand!
 
 ### Solve
 **Flag** `pwn.college{MdyOFbhzVYMTXja1Ng1S03lhMMf.QXxcTN0wCMwEzNzEzW}`
@@ -10,7 +10,7 @@ to solve
 ### New Learnings
 cat command is used for reading out files.
 
-## catting absolute paths
+## 2. catting absolute paths
 
 ### Solve
 **Flag** `pwn.college{4_Y_CVNwExd51vRemeSPaCu-YK0.QX5ETO0wCMwEzNzEzW}`
@@ -18,65 +18,71 @@ to solve
 `cd /challenge`
 `cat /flag`
 
-## more catting practice
+## 3. more catting practice
 
 ### Solve 
 **Flag** `pwn.college{s7NNNcB77_TFWGhkM3MzQW6ABSr.QXwITO0wCMwEzNzEzW}`
 to solve `cat /usr/share/luajit-2.1.0-beta3/flag`
 
-## grepping for a n eedle in a haystack
+## 4. grepping for a n eedle in a haystack
 
 ### Solve 
 **Flag** `pwn.college{AyercwvsTw4eHGtESqPf88-X6d0.QX3EDO0wCMwEzNzEzW}`
 to solve 
 ` grep pwn.college /challenge/data.txt`
 
-## comparing files
+### New Learnings
+grep command is used to read larger files which cannot be read by cat.
+
+## 5. comparing files
 
 ### Solve 
-**Flag**  `
+**Flag**  ` pwn.college{E1Ro0CISaO99UFe16Ir3PaB2CVd.01MwMDOxwCMwEzNzEzW}`
 
-## listing files
+### New Learnings
 
-### Solve 
-**Flag** 
 
-## touching files
-
-### Solve 
-**Flag** 
-
-## removing files
+## 6. listing files
 
 ### Solve 
 **Flag** 
 
-## hidden files
+## 7. touching files
 
 ### Solve 
 **Flag** 
 
-## An Epic Filesystem Quest
+## 8. removing files
 
 ### Solve 
 **Flag** 
 
-## making directories
+## 9. hidden files
 
 ### Solve 
 **Flag** 
 
-## finding files
+## 10. An Epic Filesystem Quest
 
 ### Solve 
 **Flag** 
 
-## Symbolic Links
+## 11. making directories
 
 ### Solve 
 **Flag** 
 
-## linking files
+## 12. finding files
+
+### Solve 
+**Flag** 
+
+## 13. Symbolic Links
+
+### Solve 
+**Flag** 
+
+## 14. linking files
 
 ### Solve 
 **Flag** 
