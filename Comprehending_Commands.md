@@ -6,7 +6,7 @@ To learn cat command.
 ### Solve
 **Flag** `pwn.college{MdyOFbhzVYMTXja1Ng1S03lhMMf.QXxcTN0wCMwEzNzEzW}`
 to solve 
-`cat flag`
+```cat flag```
 
 ### New Learnings
 cat command is used for reading out files.
@@ -16,14 +16,14 @@ cat command is used for reading out files.
 ### Solve
 **Flag** `pwn.college{4_Y_CVNwExd51vRemeSPaCu-YK0.QX5ETO0wCMwEzNzEzW}`
 to solve
-`cd /challenge`
-`cat /flag`
+```cd /challenge```
+```cat /flag```
 
 ## 3. more catting practice
 
 ### Solve 
 **Flag** `pwn.college{s7NNNcB77_TFWGhkM3MzQW6ABSr.QXwITO0wCMwEzNzEzW}`
-to solve `cat /usr/share/luajit-2.1.0-beta3/flag`
+to solve ```cat /usr/share/luajit-2.1.0-beta3/flag```
 
 ## 4. grepping for a n eedle in a haystack
 To learn grep command
@@ -31,7 +31,7 @@ To learn grep command
 ### Solve 
 **Flag** `pwn.college{AyercwvsTw4eHGtESqPf88-X6d0.QX3EDO0wCMwEzNzEzW}`
 to solve 
-` grep pwn.college /challenge/data.txt`
+``` grep pwn.college /challenge/data.txt```
 
 ### New Learnings
 grep command is used to read larger files which cannot be read by cat.
@@ -53,9 +53,9 @@ To learn ls command to list files.
 ### Solve 
 **Flag** `pwn.college{MVDuZ4LRdIpjqBFbnRgY22LPq7i.QX4IDO0wCMwEzNzEzW}`
 to solve
-`ls /challenge`
-` cat /challenge/24008-renamed-run-4526`
-`/challenge/24008-renamed-run-4526`
+```ls /challenge```
+```cat /challenge/24008-renamed-run-4526```
+```/challenge/24008-renamed-run-4526```
 
 ### New Learnings
 The ls command is used for listing files.
@@ -66,9 +66,9 @@ Use touch command to create files.
 ### Solve 
 **Flag** `pwn.college{cyxKRXGTgx777E_6Vayzr65Ey8V.QXwMDO0wCMwEzNzEzW}`
 to solve
-`touch pwn`
-`touch college`
-`/challenge/run`
+```touch pwn```
+```touch college```
+```/challenge/run```
 
 ### New Learnings
 The touch command is used to create a new blank file inside a directory.
@@ -79,9 +79,9 @@ To use rm command to remove files.
 ### Solve 
 **Flag** `pwn.college{kqMHbSJGPJ8Av5hKiH5tXilFShR.QX2kDM1wCMwEzNzEzW}`
 to solve 
-`ls`
-`rm delete_me`
-`/challenge/check`
+```ls```
+```rm delete_me```
+```/challenge/check```
 
 ### New Learnings
 The rm command is used to remove files.
@@ -92,8 +92,8 @@ To use mv command to move files.
 ### Solve 
 **Flag** `pwn.college{AFPaq6Afy_FfXQvQ5cmQrQbWnw2.0VOxEzNxwCMwEzNzEzW}`
 to solve 
-`mv /flag /tmp/hack-the-planet`
-`/challenge/check`
+```mv /flag /tmp/hack-the-planet```
+```/challenge/check```
 
 ### New Learnings
 The mv command is used to move files.
@@ -106,8 +106,8 @@ To find the hidden flag using -a after ls to see the file.
 ### Solve 
 **Flag** `pwn.college{cAcxI2wxMPR1QXC_DW53_zyq02g.QXwUDO0wCMwEzNzEzW}`
 to solve
-`ls -a /`
-`cat /.flag-15375128643585`
+```ls -a /```
+```cat /.flag-15375128643585```
 
 ### New Learnings
 The ls command does not list files that start with .a by default. These files are hidden.
@@ -233,7 +233,8 @@ Using the command find to find a file.
 
 ### Solve 
 **Flag** `pwn.college{sFd0ZD7WDPtpBpaRkozrah_WfUS.QXyMDO0wCMwEzNzEzW}`
-to solve
+
+To solve:
 `hacker@commands~finding-files:~$ find  / -name flag
 find: ‘/root’: Permission denied
 find: ‘/etc/ssl/private’: Permission denied
@@ -282,13 +283,14 @@ hacker@commands~finding-files:~$ cat /usr/local/lib/python3.8/dist-packages/pwnl
 cat: /usr/local/lib/python3.8/dist-packages/pwnlib/flag: Is a directory
 hacker@commands~finding-files:~$ /usr/local/lib/python3.8/dist-packages/pwnlib/flag^C
 hacker@commands~finding-files:~$ cat /usr/share/emacs/26.3/etc/images/icons/hicolor/32x32/flag
-pwn.college{sFd0ZD7WDPtpBpaRkozrah_WfUS.QXyMDO0wCMwEzNzEzW}hacker@commands~finding-files:~$`
+pwn.college{sFd0ZD7WDPtpBpaRkozrah_WfUS.QXyMDO0wCMwEzNzEzW}`
 
 ### New Learnings
 The find command is used to find files.
 Format: find argument.
 The argument can be a location or name using '-name filename'. If no argument is specified then find matches every file. 
-To search the whole file system: 'find / -name filename'
+To search the whole file system: 'find / -name filename;
+
 ## 14. linking files
 
 ### Solve 
