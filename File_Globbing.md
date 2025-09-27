@@ -61,22 +61,37 @@ pwn.college{MIuHO92RHZQnl3q_xKzby3F0h_q.QX0IDO0wCMwEzNzEzW}`
 ## 5. Multiple globs
 
 ### Solve
-**Flag**
+**Flag** `pwn.college{szxZjozfsWXifegEFz0dV3PSw5I.0lM3kjNxwCMwEzNzEzW}`
+To solve
+`hacker@globbing~multiple-globs:~$ cd /challenge/files
+hacker@globbing~multiple-globs:/challenge/files$ /challenge/run *p*
+You got it! Here is your flag!
+pwn.college{szxZjozfsWXifegEFz0dV3PSw5I.0lM3kjNxwCMwEzNzEzW}`
 
 ## 6. Mixing globs
 
 ### Solve
-**Flag**
+**Flag** `pwn.college{0BxUtB4JWMrM7ibP4ngSvVuvb40.QX1IDO0wCMwEzNzEzW}`
+To solve
+`hacker@globbing~mixing-globs:~$  cd /challenge/files
+/challenge/run [cep]*
+You got it! Here is your flag!
+pwn.college{0BxUtB4JWMrM7ibP4ngSvVuvb40.QX1IDO0wCMwEzNzEzW}`
 
 ## 7. Exclusionary globbing
 
 ### Solve
-**Flag**
+**Flag** `pwn.college{YUCSy3Y14oMCTBrPpSbDX2bRyVt.QX2IDO0wCMwEzNzEzW}`
+To solve
+` cd /challenge/files
+/challenge/run [!pwn]*
+You got it! Here is your flag!
+pwn.college{YUCSy3Y14oMCTBrPpSbDX2bRyVt.QX2IDO0wCMwEzNzEzW}`
 
 ## 8. Tab completion
 
 ### Solve
-**Flag**
+**Flag** `
 
 ## 9. Multiple options for tab completion
 
