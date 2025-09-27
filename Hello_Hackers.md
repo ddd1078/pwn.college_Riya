@@ -26,5 +26,5 @@ Learning how to view command history.
 
 ### Solve
 click up arrow key
-**flag** pwn.college{8a1IsOaeTaVqrPM3zESCfgcGf2R.0lNzEzNxwCMwEzNzEzW} 
+**flag** `pwn.college{8a1IsOaeTaVqrPM3zESCfgcGf2R.0lNzEzNxwCMwEzNzEzW}`
 
