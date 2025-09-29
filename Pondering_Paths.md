@@ -4,7 +4,7 @@
 Invoke pwn program using its absolute path
 
 ### Solve
-**Flag** `pwn.college{EnbJfLWePbUxdcQuPa7z3Vx663M.QX4cTO0wCMwEzNzEzW}`
+**Flag** `pwn.college{EnbJfLWePbUxdcQuPa7z3Vx663M.QX4cTO0wCMwEzNzEzW}`  
 to solve `/pwn`
 
 ### New Learnings
@@ -14,14 +14,14 @@ Absolute paths start with a / which means its starts at the root.
 Using absolute path to invoke program with 2 directories
 
 ### Solve
-**Flag** `pwn.college{UowZVMqkjpE7TOHbI3PQ1mLjb2g.QX1QTN0wCMwEzNzEzW}`
+**Flag** `pwn.college{UowZVMqkjpE7TOHbI3PQ1mLjb2g.QX1QTN0wCMwEzNzEzW}`  
 to solve ` /challenge/run`
 
 ## Position thy self
 Learning to navigate directories using cd (change directory)
 
 ### Solve
-**Flag** `pwn.college{ckyMMwT4_Me-vroeuiqO4LVD0nH.QX2QTN0wCMwEzNzEzW}`
+**Flag** `pwn.college{ckyMMwT4_Me-vroeuiqO4LVD0nH.QX2QTN0wCMwEzNzEzW}`  
 to solve 
 ` cd /etc/apt/sources.list.d`
 ` /challenge/run`
@@ -33,7 +33,7 @@ cd is a command to change directories
 Execute program from a specific path using cd.
 
 ### Solve
-**Flag** `pwn.college{Mm_g4SXyV8cv90jivynxyA-y-_I.QX3QTN0wCMwEzNzEzW}`
+**Flag** `pwn.college{Mm_g4SXyV8cv90jivynxyA-y-_I.QX3QTN0wCMwEzNzEzW}`  
 to solve
 ` cd /var/lib/apt/lists`
 `/challenge/run`
@@ -42,7 +42,7 @@ to solve
 Execute program from a specific path using cd.
 
 ### Solve
-**Flag** `pwn.college{MoaL1S8tDnmAgrEP0eoIhXKGZ_a.QX4QTN0wCMwEzNzEzW}`
+**Flag** `pwn.college{MoaL1S8tDnmAgrEP0eoIhXKGZ_a.QX4QTN0wCMwEzNzEzW}`  
 to solve
 `cd  /home/hacker`
 ` cd /sys/kernel`
@@ -52,7 +52,7 @@ to solve
 Using a relative path to execute a program
 
 ### Solve
-**Flag** `pwn.college{A4y0sTtfuKP4ixSSPHc6Vd7a0t7.QX5QTN0wCMwEzNzEzW}`
+**Flag** `pwn.college{A4y0sTtfuKP4ixSSPHc6Vd7a0t7.QX5QTN0wCMwEzNzEzW}`  
 to solve
 `cd /`
 ` challenge/run`
@@ -64,7 +64,7 @@ It is interpreted relative to the current working directory (cwd).
 ## explicit relative paths, from /
 
 ### Solve
-**Flag** `pwn.college{4dTotZT0S59QpsH6OlCXkFl-eOJ.QXwUTN0wCMwEzNzEzW}`
+**Flag** `pwn.college{4dTotZT0S59QpsH6OlCXkFl-eOJ.QXwUTN0wCMwEzNzEzW}`  
 to solve
 `cd /`
 `./challenge/run`
@@ -75,7 +75,7 @@ to solve
 ## implicit relative path
 
 ### Solve
-**Flag** `pwn.college{IHsbCRyTKgm_bFaYtEVeynhya9G.QXxUTN0wCMwEzNzEzW}`
+**Flag** `pwn.college{IHsbCRyTKgm_bFaYtEVeynhya9G.QXxUTN0wCMwEzNzEzW}`  
 to solve 
 `cd /challenge`
 `./run`
@@ -83,7 +83,7 @@ to solve
 ## home sweet home
 
 ### Solve
-**Flag** `pwn.college{IqTRoEg8329Mr-MWEOicQStop6V.QXzMDO0wCMwEzNzEzW}`
+**Flag** `pwn.college{IqTRoEg8329Mr-MWEOicQStop6V.QXzMDO0wCMwEzNzEzW}`  
 to solve 
 `cd`
 `challenge/run ~/a`
