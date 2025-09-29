@@ -4,7 +4,7 @@
 To learn cat command.
 
 ### Solve
-**Flag** `pwn.college{MdyOFbhzVYMTXja1Ng1S03lhMMf.QXxcTN0wCMwEzNzEzW}`
+**Flag** `pwn.college{MdyOFbhzVYMTXja1Ng1S03lhMMf.QXxcTN0wCMwEzNzEzW}`  
 to solve 
 ```cat flag```
 
@@ -14,7 +14,7 @@ cat command is used for reading out files.
 ## 2. catting absolute paths
 
 ### Solve
-**Flag** `pwn.college{4_Y_CVNwExd51vRemeSPaCu-YK0.QX5ETO0wCMwEzNzEzW}`
+**Flag** `pwn.college{4_Y_CVNwExd51vRemeSPaCu-YK0.QX5ETO0wCMwEzNzEzW}`  
 to solve
 ```cd /challenge```
 ```cat /flag```
@@ -22,14 +22,14 @@ to solve
 ## 3. more catting practice
 
 ### Solve 
-**Flag** `pwn.college{s7NNNcB77_TFWGhkM3MzQW6ABSr.QXwITO0wCMwEzNzEzW}`
+**Flag** `pwn.college{s7NNNcB77_TFWGhkM3MzQW6ABSr.QXwITO0wCMwEzNzEzW}`  
 to solve ```cat /usr/share/luajit-2.1.0-beta3/flag```
 
 ## 4. grepping for a n eedle in a haystack
 To learn grep command
 
 ### Solve 
-**Flag** `pwn.college{AyercwvsTw4eHGtESqPf88-X6d0.QX3EDO0wCMwEzNzEzW}`
+**Flag** `pwn.college{AyercwvsTw4eHGtESqPf88-X6d0.QX3EDO0wCMwEzNzEzW}`  
 to solve 
 ``` grep pwn.college /challenge/data.txt```
 
@@ -51,7 +51,7 @@ Output: <difference in 1st file >difference in second file
 To learn ls command to list files.
 
 ### Solve 
-**Flag** `pwn.college{MVDuZ4LRdIpjqBFbnRgY22LPq7i.QX4IDO0wCMwEzNzEzW}`
+**Flag** `pwn.college{MVDuZ4LRdIpjqBFbnRgY22LPq7i.QX4IDO0wCMwEzNzEzW}`  
 to solve
 ```ls /challenge```
 ```cat /challenge/24008-renamed-run-4526```
@@ -64,7 +64,7 @@ The ls command is used for listing files.
 Use touch command to create files.
 
 ### Solve 
-**Flag** `pwn.college{cyxKRXGTgx777E_6Vayzr65Ey8V.QXwMDO0wCMwEzNzEzW}`
+**Flag** `pwn.college{cyxKRXGTgx777E_6Vayzr65Ey8V.QXwMDO0wCMwEzNzEzW}`  
 to solve
 ```touch pwn```
 ```touch college```
@@ -77,7 +77,7 @@ The touch command is used to create a new blank file inside a directory.
 To use rm command to remove files.
 
 ### Solve 
-**Flag** `pwn.college{kqMHbSJGPJ8Av5hKiH5tXilFShR.QX2kDM1wCMwEzNzEzW}`
+**Flag** `pwn.college{kqMHbSJGPJ8Av5hKiH5tXilFShR.QX2kDM1wCMwEzNzEzW}`  
 to solve 
 ```ls```
 ```rm delete_me```
@@ -90,7 +90,7 @@ The rm command is used to remove files.
 To use mv command to move files.
 
 ### Solve 
-**Flag** `pwn.college{AFPaq6Afy_FfXQvQ5cmQrQbWnw2.0VOxEzNxwCMwEzNzEzW}`
+**Flag** `pwn.college{AFPaq6Afy_FfXQvQ5cmQrQbWnw2.0VOxEzNxwCMwEzNzEzW}`  
 to solve 
 ```mv /flag /tmp/hack-the-planet```
 ```/challenge/check```
@@ -104,7 +104,7 @@ The contents of file1 would move to file2
 To find the hidden flag using -a after ls to see the file.
 
 ### Solve 
-**Flag** `pwn.college{cAcxI2wxMPR1QXC_DW53_zyq02g.QXwUDO0wCMwEzNzEzW}`
+**Flag** `pwn.college{cAcxI2wxMPR1QXC_DW53_zyq02g.QXwUDO0wCMwEzNzEzW}`  
 to solve
 ```ls -a /```
 ```cat /.flag-15375128643585```
@@ -116,7 +116,7 @@ Use ls -a to show them.
 ## 11. An Epic Filesystem Quest
 
 ### Solve 
-**Flag** `pwn.college{00C3weLnoUnPwqogTGn-InPePPB.QX5IDO0wCMwEzNzEzW}`
+**Flag** `pwn.college{00C3weLnoUnPwqogTGn-InPePPB.QX5IDO0wCMwEzNzEzW}`  
 to solve 
 `hacker@commands~an-epic-filesystem-quest:~$ cd /
 hacker@commands~an-epic-filesystem-quest:/$ ls
@@ -214,7 +214,7 @@ hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/drivers/misc/mic/c
 Using mkdir command to make a directory and add a file to it using touch command.
 
 ### Solve 
-**Flag** `pwn.college{kGXEz2qnQXOqyyovrikwkg79MbL.QXxMDO0wCMwEzNzEzW}`
+**Flag** `pwn.college{kGXEz2qnQXOqyyovrikwkg79MbL.QXxMDO0wCMwEzNzEzW}`  
 to solve
 `hacker@commands~making-directories:~$ cd /tmp
 hacker@commands~making-directories:/tmp$ mkdir pwn
@@ -232,7 +232,7 @@ The mkdir command is used to make a new directory.
 Using the command find to find a file.
 
 ### Solve 
-**Flag** `pwn.college{sFd0ZD7WDPtpBpaRkozrah_WfUS.QXyMDO0wCMwEzNzEzW}`
+**Flag** `pwn.college{sFd0ZD7WDPtpBpaRkozrah_WfUS.QXyMDO0wCMwEzNzEzW}`  
 
 To solve:
 `hacker@commands~finding-files:~$ find  / -name flag
@@ -294,4 +294,19 @@ To search the whole file system: 'find / -name filename;
 ## 14. linking files
 
 ### Solve 
-**Flag** 
+**Flag** `pwn.college{szXCJOrimeCxho4aIeUUCQIHe76.QX5ETN1wCMwEzNzEzW}`  }
+to solve  
+`hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
+ln: failed to create symbolic link '/home/hacker/not-the-flag': File exists
+hacker@commands~linking-files:~$ rm -f ~/not-the-flag
+hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
+hacker@commands~linking-files:~$ ls -l /home/hacker/not-the-flag
+lrwxrwxrwx 1 hacker hacker 5 Sep 29 12:40 /home/hacker/not-the-flag -> /flag
+hacker@commands~linking-files:~$ /challenge/catflag
+About to read out the /home/hacker/not-the-flag file!
+pwn.college{szXCJOrimeCxho4aIeUUCQIHe76.QX5ETN1wCMwEzNzEzW}`
+
+
+### New Learnings
+Symbolic links or soft links are a special type of file that references another file.
+Format: ln -s file-to-be-linked file
