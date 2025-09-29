@@ -42,8 +42,8 @@ The manual comprises of the name, synopsis, description, see also etc.
 ## 4. Searching Manuals
 
 ### Solve
-**FLag** `pwn.college{UhjDJr8Vn8RQwN-jdlaU51TaNpE.QX1EDO0wCMwEzNzEzW}`
-to solve
+**FLag** `pwn.college{UhjDJr8Vn8RQwN-jdlaU51TaNpE.QX1EDO0wCMwEzNzEzW}`  
+to solve  
 `hacker@man~searching-manuals:~$ man challenge
 hacker@man~searching-manuals:~$ /challenge/challenge  --zhunsuu
 Initializing...
@@ -56,8 +56,8 @@ Manuals can be searched using / and searched backward using ? within the manual.
 ## 5. Searching For Manuals
 
 ### Solve
-**FLag** `pwn.college{AcpEleqrRM8iWtLo8I-bMciiln_.QX2EDO0wCMwEzNzEzW}`
-to solve
+**FLag** `pwn.college{AcpEleqrRM8iWtLo8I-bMciiln_.QX2EDO0wCMwEzNzEzW}`  
+to solve  
 `hacker@man~searching-for-manuals:~$ man man
 hacker@man~searching-for-manuals:~$ man -k challenge
 cpleqritob (1)       - print the flag!
