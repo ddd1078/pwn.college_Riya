@@ -134,19 +134,6 @@ pwn.college{UO2rmpXUxGJn4x_p7PaxfYdscy2.QX5EDO0wCMwEzNzEzW}`
 ## 8. Grepping errors
 
 ### Solve
-**flag** `
-
-## 9. Filtering with grep -v
-
-### Solve
-**flag** `pwn.college{gEYfnhiuhtmNwMAhYnz7dbYSGfR.0FOxEzNxwCMwEzNzEzW}`  
-To solve  
-`hacker@piping~filtering-with-grep-v:~$ /challenge/run | grep -v DECOY
-pwn.college{gEYfnhiuhtmNwMAhYnz7dbYSGfR.0FOxEzNxwCMwEzNzEzW}`
-
-## 10. Duplicating piped data with tee
-
-### Solve
 **flag** `pwn.college{8RKuBnuAEjIpcFjbdppY4HTXESg.QX1ATO0wCMwEzNzEzW}`  
 To solve  
 `hacker@piping~grepping-errors:~$ /challenge/run 2>&1 | grep pwn.college
@@ -164,6 +151,21 @@ To solve
 [PASS] You have passed the checks on the process on the other end of my stderr!
 [PASS] Success! You have satisfied all execution requirements.
 pwn.college{8RKuBnuAEjIpcFjbdppY4HTXESg.QX1ATO0wCMwEzNzEzW}`
+
+## 9. Filtering with grep -v
+
+### Solve
+**flag** `pwn.college{gEYfnhiuhtmNwMAhYnz7dbYSGfR.0FOxEzNxwCMwEzNzEzW}`  
+To solve  
+`hacker@piping~filtering-with-grep-v:~$ /challenge/run | grep -v DECOY
+pwn.college{gEYfnhiuhtmNwMAhYnz7dbYSGfR.0FOxEzNxwCMwEzNzEzW}`
+
+## 10. Duplicating piped data with tee
+
+### Solve
+**flag** `  
+To solve  
+
 
 ## 11. Process substitution for input
 
