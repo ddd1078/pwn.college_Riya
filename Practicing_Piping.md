@@ -71,10 +71,18 @@ Use >> (not >) to append command output so you don't overwrite earlier results.
 ## 4. Redirecting errors
 
 ### Solve
-**flag** `
+**flag** `pwn.college{QwkTd-9lj2WrVZvmq5tHRiJdkcF.QX3YTN0wCMwEzNzEzW}`
+To solve  
+`hacker@piping~redirecting-errors:~$ /challenge/run >>myflag 2>instructions
+hacker@piping~redirecting-errors:~$ cat myflag
+[FLAG] Here is your flag:
+[FLAG] pwn.college{QwkTd-9lj2WrVZvmq5tHRiJdkcF.QX3YTN0wCMwEzNzEzW}`
 
 ### New Learnings
-
+File descriptor is a number that describes a communication channel in linux.  
+FD 0: Standard input  
+FD 1: Standard output  
+FD 2: Standard error  
 
 ## 5. Redirecting input
 
