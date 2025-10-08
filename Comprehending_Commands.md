@@ -6,7 +6,9 @@ To learn cat command.
 ### Solve
 **Flag** `pwn.college{MdyOFbhzVYMTXja1Ng1S03lhMMf.QXxcTN0wCMwEzNzEzW}`  
 to solve 
-```cat flag```
+```bash
+cat flag
+```
 
 ### New Learnings
 cat command is used for reading out files.
@@ -16,14 +18,19 @@ cat command is used for reading out files.
 ### Solve
 **Flag** `pwn.college{4_Y_CVNwExd51vRemeSPaCu-YK0.QX5ETO0wCMwEzNzEzW}`  
 to solve
-```cd /challenge```
-```cat /flag```
+```bash
+cd /challenge
+cat /flag
+```
 
 ## 3. more catting practice
 
 ### Solve 
 **Flag** `pwn.college{s7NNNcB77_TFWGhkM3MzQW6ABSr.QXwITO0wCMwEzNzEzW}`  
-to solve ```cat /usr/share/luajit-2.1.0-beta3/flag```
+to solve 
+```bash
+cat /usr/share/luajit-2.1.0-beta3/flag
+```
 
 ## 4. grepping for a n eedle in a haystack
 To learn grep command
@@ -31,7 +38,9 @@ To learn grep command
 ### Solve 
 **Flag** `pwn.college{AyercwvsTw4eHGtESqPf88-X6d0.QX3EDO0wCMwEzNzEzW}`  
 to solve 
-``` grep pwn.college /challenge/data.txt```
+```bash
+grep pwn.college /challenge/data.txt
+```
 
 ### New Learnings
 grep command is used to read larger files which cannot be read by cat.
@@ -53,11 +62,13 @@ To learn ls command to list files.
 ### Solve 
 **Flag** `pwn.college{MVDuZ4LRdIpjqBFbnRgY22LPq7i.QX4IDO0wCMwEzNzEzW}`  
 to solve
-```ls /challenge```
-```cat /challenge/24008-renamed-run-4526```
-```/challenge/24008-renamed-run-4526```
+```ls /challenge
+cat /challenge/24008-renamed-run-4526
+/challenge/24008-renamed-run-4526
+```
 
 ### New Learnings
+
 The ls command is used for listing files.
 
 ## 7. touching files
@@ -66,9 +77,11 @@ Use touch command to create files.
 ### Solve 
 **Flag** `pwn.college{cyxKRXGTgx777E_6Vayzr65Ey8V.QXwMDO0wCMwEzNzEzW}`  
 to solve
-```touch pwn```
-```touch college```
-```/challenge/run```
+```bash
+touch pwn
+touch college
+/challenge/run
+```
 
 ### New Learnings
 The touch command is used to create a new blank file inside a directory.
@@ -79,9 +92,11 @@ To use rm command to remove files.
 ### Solve 
 **Flag** `pwn.college{kqMHbSJGPJ8Av5hKiH5tXilFShR.QX2kDM1wCMwEzNzEzW}`  
 to solve 
-```ls```
-```rm delete_me```
-```/challenge/check```
+```bash
+ls
+rm delete_me
+/challenge/check
+```
 
 ### New Learnings
 The rm command is used to remove files.
@@ -92,8 +107,10 @@ To use mv command to move files.
 ### Solve 
 **Flag** `pwn.college{AFPaq6Afy_FfXQvQ5cmQrQbWnw2.0VOxEzNxwCMwEzNzEzW}`  
 to solve 
-```mv /flag /tmp/hack-the-planet```
-```/challenge/check```
+```bash
+mv /flag /tmp/hack-the-planet
+/challenge/check
+```
 
 ### New Learnings
 The mv command is used to move files.
@@ -106,8 +123,10 @@ To find the hidden flag using -a after ls to see the file.
 ### Solve 
 **Flag** `pwn.college{cAcxI2wxMPR1QXC_DW53_zyq02g.QXwUDO0wCMwEzNzEzW}`  
 to solve
-```ls -a /```
-```cat /.flag-15375128643585```
+```bash
+ls -a /
+cat /.flag-15375128643585
+```
 
 ### New Learnings
 The ls command does not list files that start with .a by default. These files are hidden.
@@ -118,7 +137,8 @@ Use ls -a to show them.
 ### Solve 
 **Flag** `pwn.college{00C3weLnoUnPwqogTGn-InPePPB.QX5IDO0wCMwEzNzEzW}`  
 to solve 
-`hacker@commands~an-epic-filesystem-quest:~$ cd /
+```bash
+hacker@commands~an-epic-filesystem-quest:~$ cd /
 hacker@commands~an-epic-filesystem-quest:/$ ls
 GIST  challenge  flag  lib32   media  opt   run   sys  var
 bin   dev        home  lib64   mnt    proc  sbin  tmp
@@ -158,7 +178,7 @@ hacker@commands~an-epic-filesystem-quest:/usr/share/systemtap/tapset$ cat  /usr/
 Congratulations, you found the clue!
 The next clue is in: /usr/lib/python3/dist-packages/sage/coding/guruswami_sudan/__pycache__`
 
-`The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
+The next clue is **hidden** --- its filename starts with a '.' character. You'll need to look for it using special options to 'ls'.
 hacker@commands~an-epic-filesystem-quest:/usr/share/systemtap/tapset$ ls -a  /usr/lib/python3/dist-packages/sage/coding/guruswami_sudan/__py
 cache__
 .          __init__.cpython-38.pyc       utils.cpython-38.pyc
@@ -185,9 +205,9 @@ box.pbm        doc-plus.pbm   mail.pbm   tag-plus.pbm
 box.xpm        doc-plus.xpm   mail.xpm   tag-plus.xpm
 hacker@commands~an-epic-filesystem-quest:/usr/share/emacs/26.3/etc/images/ezimage$ cat  /usr/share/emacs/26.3/etc/images/ezimage/WHISPER
 Yahaha, you found me!
-The next clue is in: /opt/linux/linux-5.4/drivers/misc/mic/cosm`
+The next clue is in: /opt/linux/linux-5.4/drivers/misc/mic/cosm
 
-`The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
+The next clue is **delayed** --- it will not become readable until you enter the directory with 'cd'.
 hacker@commands~an-epic-filesystem-quest:/usr/share/emacs/26.3/etc/images/ezimage$ cd  /opt/linux/linux-5.4/drivers/misc/mic/cosm
 hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/drivers/misc/mic/cosm$ ls  /opt/linux/linux-5.4/drivers/misc/mic/cosm
 EVIDENCE  cosm_debugfs.c  cosm_main.h         cosm_sysfs.c
@@ -208,7 +228,8 @@ url-domsuf.elc  url-imap.elc      url-parse.elc
 hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/drivers/misc/mic/cosm$ cat /usr/share/emacs/26.3/lisp/url/TIP
 CONGRATULATIONS! Your perserverence has paid off, and you have found the flag!
 It is: pwn.college{00C3weLnoUnPwqogTGn-InPePPB.QX5IDO0wCMwEzNzEzW}
-hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/drivers/misc/mic/cosm$ /usr/share/emacs/26.3/lisp/url/usr/share/emacs/26.3/lisp/url/usr/share/emacs/26.3/lisp/url/usr/share/emacs/26.3/lisp/url`
+hacker@commands~an-epic-filesystem-quest:/opt/linux/linux-5.4/drivers/misc/mic/cosm$ /usr/share/emacs/26.3/lisp/url/usr/share/emacs/26.3/lisp/url/usr/share/emacs/26.3/lisp/url/usr/share/emacs/26.3/lisp/url
+```
 
 ## 12. making directories
 Using mkdir command to make a directory and add a file to it using touch command.
@@ -216,14 +237,16 @@ Using mkdir command to make a directory and add a file to it using touch command
 ### Solve 
 **Flag** `pwn.college{kGXEz2qnQXOqyyovrikwkg79MbL.QXxMDO0wCMwEzNzEzW}`  
 to solve
-`hacker@commands~making-directories:~$ cd /tmp
+```bash
+hacker@commands~making-directories:~$ cd /tmp
 hacker@commands~making-directories:/tmp$ mkdir pwn
 hacker@commands~making-directories:/tmp$ cd /tmp/pwn
 hacker@commands~making-directories:/tmp/pwn$ touch college
 hacker@commands~making-directories:/tmp/pwn$ /challenge/run
 Success! Here is your flag:
 pwn.college{kGXEz2qnQXOqyyovrikwkg79MbL.QXxMDO0wCMwEzNzEzW}
-hacker@commands~making-directories:/tmp/pwn$ pwn.college{kGXEz2qnQXOqyyovrikwkg79MbL.QXxMDO0wCMwEzNzEzW}`
+hacker@commands~making-directories:/tmp/pwn$ pwn.college{kGXEz2qnQXOqyyovrikwkg79MbL.QXxMDO0wCMwEzNzEzW}
+```
 
 ### New Learnings
 The mkdir command is used to make a new directory.
@@ -235,7 +258,8 @@ Using the command find to find a file.
 **Flag** `pwn.college{sFd0ZD7WDPtpBpaRkozrah_WfUS.QXyMDO0wCMwEzNzEzW}`  
 
 To solve:
-`hacker@commands~finding-files:~$ find  / -name flag
+```bash
+hacker@commands~finding-files:~$ find  / -name flag
 find: ‘/root’: Permission denied
 find: ‘/etc/ssl/private’: Permission denied
 find: ‘/tmp/tmp.4mK6TfTSUV’: Permission denied
@@ -304,7 +328,8 @@ hacker@commands~linking-files:~$ ls -l /home/hacker/not-the-flag
 lrwxrwxrwx 1 hacker hacker 5 Sep 29 12:40 /home/hacker/not-the-flag -> /flag
 hacker@commands~linking-files:~$ /challenge/catflag
 About to read out the /home/hacker/not-the-flag file!
-pwn.college{szXCJOrimeCxho4aIeUUCQIHe76.QX5ETN1wCMwEzNzEzW}`
+pwn.college{szXCJOrimeCxho4aIeUUCQIHe76.QX5ETN1wCMwEzNzEzW}
+```
 
 
 ### New Learnings
