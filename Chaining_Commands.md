@@ -111,20 +111,78 @@ Flag: pwn.college{EbxoYI8Yva8UBsOurxcl8TIEmEU.0VOzMDOxwCMwEzNzEzW}
 ## 8. Scripting with arguments
 
 ### Solve
-**Flag** 
+**Flag** `pwn.college{QKVsum9qM9NLzKhA7Xyl5Jzh_Su.0VNzMDOxwCMwEzNzEzW}`
+
+```bash
+hacker@chaining~scripting-with-arguments:~$ printf '%s\n' '#!/bin/bash' 'printf "%s %s\n" "$2" "$1"' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-arguments:~$ chmod +x /home/hacker/solve.sh
+hacker@chaining~scripting-with-arguments:~$ /challenge/run
+Correct! Your script properly reversed the arguments.
+Here's your flag:
+pwn.college{QKVsum9qM9NLzKhA7Xyl5Jzh_Su.0VNzMDOxwCMwEzNzEzW}
+```
+
 ## 9. Scripting with conditionals
 
 ### Solve
-**Flag**
+**Flag** `pwn.college{ohoG3qNGiRNiufMbFrHTUGl1LQK.0lNzMDOxwCMwEzNzEzW}`
+
+```bash
+hacker@chaining~scripting-with-conditionals:~$ printf '%s\n' '#!/bin/bash' 'if [ "$1" = "pwn" ]; then echo "college"; fi' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ chmod +x /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ chmod +x /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ /challenge/run
+Correct! Your script properly handles all the conditions.
+Here's your flag:
+pwn.college{ohoG3qNGiRNiufMbFrHTUGl1LQK.0lNzMDOxwCMwEzNzEzW}
+```
+
 ## 10. Scripting with default cases
 
 ### Solve
-**Flag**
+**Flag** `pwn.college{oz5XKf1Wx1cKloyyTPQwcz9d1J9.01NzMDOxwCMwEzNzEzW}`
+
+```bash
+hacker@chaining~scripting-with-default-cases:~$ printf '%s\n' '#!/bin/bash' 'if [ "$1" = "pwn" ]; then echo "college"; else echo "nope"; fi' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-default-cases:~$ chmod +x /home/hacker/solve.sh
+hacker@chaining~scripting-with-default-cases:~$ /challenge/run
+Correct! Your script properly handles the if/else conditions.
+Here's your flag:
+pwn.college{oz5XKf1Wx1cKloyyTPQwcz9d1J9.01NzMDOxwCMwEzNzEzW}
+```
+
 ## 11. Scripting with multiple conditions
 
 ### Solve
-**Flag**
+**Flag** `pwn.college{8lTzoiQ_BrMXmrGGFRwYtUNets3.0FOzMDOxwCMwEzNzEzW}`
+
+```bash
+hacker@chaining~scripting-with-multiple-conditions:~$ printf '%s\n' '#!/bin/bash' 'if [ "$1" = "hack" ]; then' '  echo "the planet"' 'elif [ "$1" = "pwn" ]; then' '  echo "college"' 'elif [ "$1" = "learn" ]; then' '  echo "linux"' 'else' '  echo "unknown"' 'fi' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ chmod +x /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ /challenge/run
+Correct! Your script properly handles all the conditions with elif.
+Here's your flag:
+pwn.college{8lTzoiQ_BrMXmrGGFRwYtUNets3.0FOzMDOxwCMwEzNzEzW}
+```
+
 ## 12. Reading shell scripts
 
 ### Solve
-**Flag**
+**Flag** `pwn.college{ACejPNy9MkI_EMlU2Ng8YcsIR6P.0lMwgDOxwCMwEzNzEzW}`
+
+```bash
+hacker@chaining~reading-shell-scripts:~$ cat /challenge/run
+#!/opt/pwn.college/bash
+
+read GUESS
+if [ "$GUESS" == "hack the PLANET" ]
+then
+        echo "CORRECT! Your flag:"
+        cat /flag
+else
+        echo "Read the /challenge/run file to figure out the correct password!"
+fi
+hacker@chaining~reading-shell-scripts:~$ printf 'hack the PLANET\n' | /challenge/run
+CORRECT! Your flag:
+pwn.college{ACejPNy9MkI_EMlU2Ng8YcsIR6P.0lMwgDOxwCMwEzNzEzW}
+```
