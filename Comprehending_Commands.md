@@ -5,9 +5,10 @@ To learn cat command.
 
 ### Solve
 **Flag** `pwn.college{MdyOFbhzVYMTXja1Ng1S03lhMMf.QXxcTN0wCMwEzNzEzW}`  
-to solve 
+to solve  
 ```bash
-cat flag
+hacker@commands~cat-not-the-pet-but-the-command:~$ cat flag
+pwn.college{MdyOFbhzVYMTXja1Ng1S03lhMMf.QXxcTN0wCMwEzNzEzW}
 ```
 
 ### New Learnings
@@ -17,19 +18,26 @@ cat command is used for reading out files.
 
 ### Solve
 **Flag** `pwn.college{4_Y_CVNwExd51vRemeSPaCu-YK0.QX5ETO0wCMwEzNzEzW}`  
-to solve
+to solve  
 ```bash
-cd /challenge
-cat /flag
+hacker@commands~catting-absolute-paths:~$ cat /flag
+pwn.college{4_Y_CVNwExd51vRemeSPaCu-YK0.QX5ETO0wCMwEzNzEzW}
 ```
 
 ## 3. more catting practice
 
 ### Solve 
 **Flag** `pwn.college{s7NNNcB77_TFWGhkM3MzQW6ABSr.QXwITO0wCMwEzNzEzW}`  
-to solve 
+to solve  
 ```bash
-cat /usr/share/luajit-2.1.0-beta3/flag
+hacker@commands~more-catting-practice:~$ cat flag
+cat: flag: No such file or directory
+hacker@commands~more-catting-practice:~$ cd flag
+You used 'cd'! In this level, I don't allow you to change the working directory
+--- you MUST chase pass 'cat' the absolute path of where I put it on the
+filesystem (which is /usr/share/vim/flag).
+hacker@commands~more-catting-practice:~$ cat /usr/share/vim/flag
+pwn.college{s7NNNcB77_TFWGhkM3MzQW6ABSr.QXwITO0wCMwEzNzEzW}
 ```
 
 ## 4. grepping for a n eedle in a haystack
@@ -37,19 +45,28 @@ To learn grep command
 
 ### Solve 
 **Flag** `pwn.college{AyercwvsTw4eHGtESqPf88-X6d0.QX3EDO0wCMwEzNzEzW}`  
-to solve 
+to solve  
 ```bash
-grep pwn.college /challenge/data.txt
+hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
+pwn.college{AyercwvsTw4eHGtESqPf88-X6d0.QX3EDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
-grep command is used to read larger files which cannot be read by cat.
+grep command is used to search for contents in larger files.
+Format:  
+grep SEARCH_STRING /path/to/file
 
 ## 5. comparing files
 To learn diff command to compare 2 files.
 
 ### Solve 
 **Flag**  ` pwn.college{E1Ro0CISaO99UFe16Ir3PaB2CVd.01MwMDOxwCMwEzNzEzW}`
+To solve  
+```bash
+hacker@commands~comparing-files:~$ diff /challenge/decoys_and_real.txt /challenge/decoys_only.txt
+12d11
+< pwn.college{E1Ro0CISaO99UFe16Ir3PaB2CVd.01MwMDOxwCMwEzNzEzW}
+```
 
 ### New Learnings
 The diff command compares 2 files line by line and shows the difference.
@@ -61,10 +78,20 @@ To learn ls command to list files.
 
 ### Solve 
 **Flag** `pwn.college{MVDuZ4LRdIpjqBFbnRgY22LPq7i.QX4IDO0wCMwEzNzEzW}`  
-to solve
-```ls /challenge
-cat /challenge/24008-renamed-run-4526
-/challenge/24008-renamed-run-4526
+to solve  
+```bash
+hacker@commands~listing-files:~$ ls /challenge
+6290-renamed-run-10563  DESCRIPTION.md
+hacker@commands~listing-files:~$ cat /challenge/6290-renamed-run-10563
+#!/opt/pwn.college/bash
+
+echo "Yahaha, you found me! Here is your flag:"
+cat /flag
+hacker@commands~listing-files:~$ cat /flag
+cat: /flag: Permission denied
+hacker@commands~listing-files:~$  /challenge/6290-renamed-run-10563
+Yahaha, you found me! Here is your flag:
+pwn.college{MVDuZ4LRdIpjqBFbnRgY22LPq7i.QX4IDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
@@ -76,11 +103,13 @@ Use touch command to create files.
 
 ### Solve 
 **Flag** `pwn.college{cyxKRXGTgx777E_6Vayzr65Ey8V.QXwMDO0wCMwEzNzEzW}`  
-to solve
+to solve  
 ```bash
-touch pwn
-touch college
-/challenge/run
+hacker@commands~touching-files:~$ touch /tmp/pwn
+hacker@commands~touching-files:~$ touch /tmp/college
+hacker@commands~touching-files:~$ /challenge/run
+Success! Here is your flag:
+pwn.college{cyxKRXGTgx777E_6Vayzr65Ey8V.QXwMDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
@@ -91,11 +120,12 @@ To use rm command to remove files.
 
 ### Solve 
 **Flag** `pwn.college{kqMHbSJGPJ8Av5hKiH5tXilFShR.QX2kDM1wCMwEzNzEzW}`  
-to solve 
+to solve  
 ```bash
-ls
-rm delete_me
-/challenge/check
+hacker@commands~removing-files:~$ rm delete_me
+hacker@commands~removing-files:~$ /challenge/check
+Excellent removal. Here is your reward:
+pwn.college{kqMHbSJGPJ8Av5hKiH5tXilFShR.QX2kDM1wCMwEzNzEzW}
 ```
 
 ### New Learnings
@@ -106,10 +136,13 @@ To use mv command to move files.
 
 ### Solve 
 **Flag** `pwn.college{AFPaq6Afy_FfXQvQ5cmQrQbWnw2.0VOxEzNxwCMwEzNzEzW}`  
-to solve 
+to solve  
 ```bash
-mv /flag /tmp/hack-the-planet
-/challenge/check
+hacker@commands~moving-files:~$ mv /flag /tmp/hack-the-planet
+Correct! Performing 'mv /flag /tmp/hack-the-planet'.
+hacker@commands~moving-files:~$ /challenge/check
+Congrats! You successfully moved the flag to /tmp/hack-the-planet! Here it is:
+pwn.college{AFPaq6Afy_FfXQvQ5cmQrQbWnw2.0VOxEzNxwCMwEzNzEzW}
 ```
 
 ### New Learnings
@@ -122,10 +155,15 @@ To find the hidden flag using -a after ls to see the file.
 
 ### Solve 
 **Flag** `pwn.college{cAcxI2wxMPR1QXC_DW53_zyq02g.QXwUDO0wCMwEzNzEzW}`  
-to solve
+to solve  
 ```bash
-ls -a /
-cat /.flag-15375128643585
+hacker@commands~hidden-files:~$ ls -a /
+.                      bin        etc    lib64   nix   run   tmp
+..                     boot       home   libx32  opt   sbin  usr
+.dockerenv             challenge  lib    media   proc  srv   var
+.flag-116851949825709  dev        lib32  mnt     root  sys
+hacker@commands~hidden-files:~$ cat /.flag-116851949825709
+pwn.college{cAcxI2wxMPR1QXC_DW53_zyq02g.QXwUDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
@@ -307,7 +345,8 @@ hacker@commands~finding-files:~$ cat /usr/local/lib/python3.8/dist-packages/pwnl
 cat: /usr/local/lib/python3.8/dist-packages/pwnlib/flag: Is a directory
 hacker@commands~finding-files:~$ /usr/local/lib/python3.8/dist-packages/pwnlib/flag^C
 hacker@commands~finding-files:~$ cat /usr/share/emacs/26.3/etc/images/icons/hicolor/32x32/flag
-pwn.college{sFd0ZD7WDPtpBpaRkozrah_WfUS.QXyMDO0wCMwEzNzEzW}`
+pwn.college{sFd0ZD7WDPtpBpaRkozrah_WfUS.QXyMDO0wCMwEzNzEzW}
+```
 
 ### New Learnings
 The find command is used to find files.
@@ -318,9 +357,10 @@ To search the whole file system: 'find / -name filename;
 ## 14. linking files
 
 ### Solve 
-**Flag** `pwn.college{szXCJOrimeCxho4aIeUUCQIHe76.QX5ETN1wCMwEzNzEzW}`  }
+**Flag** `pwn.college{szXCJOrimeCxho4aIeUUCQIHe76.QX5ETN1wCMwEzNzEzW}`  
 to solve  
-`hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
+```bash
+hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
 ln: failed to create symbolic link '/home/hacker/not-the-flag': File exists
 hacker@commands~linking-files:~$ rm -f ~/not-the-flag
 hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
