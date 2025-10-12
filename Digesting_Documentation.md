@@ -4,7 +4,7 @@
 Learning documentation.
 
 ### Solve
-**FLag** `pwn.college{IJ14RfTP_Dzjt4UL1ZA9RuVs9Dc.QX0ITO0wCMwEzNzEzW}`  
+**Flag** `pwn.college{IJ14RfTP_Dzjt4UL1ZA9RuVs9Dc.QX0ITO0wCMwEzNzEzW}`  
 to solve  
 ```bash
 hacker@man~learning-from-documentation:~$ /challenge/challenge --giveflag
@@ -74,6 +74,8 @@ hacker@man~searching-for-manuals:~$ man cpleqritob
 hacker@man~searching-for-manuals:~$ /challenge/challenge --cpleqr 882
 Correct usage! Your flag: pwn.college{AcpEleqrRM8iWtLo8I-bMciiln_.QX2EDO0wCMwEzNzEzW}
 ```
+### New Learnings
+'man -k argument' searches the manual database for that argument and is used to find hidden man pages.
 
 ## 6. Helpful Programs
 Learning to use --help.
