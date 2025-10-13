@@ -10,7 +10,7 @@
 8. Data Manipulation  
 9. Processes and Jobs  
 10. Untangling Users  
-11. Perceiving Information  
+11. Perceiving Permissions
 12. Chain Commands  
 13. Terminal Multiplexing  
 14. Pondering PATH  
