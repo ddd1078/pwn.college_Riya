@@ -5,18 +5,17 @@
 ### Solve
 **Flag** `pwn.college{QrzmRe4vQ4PPb0o2Ofz0W47pZ5U.QXxEjN0wCMwEzNzEzW}`
 ```bash
-hacker@permissions~changing-file-ownership:~$ ls -l /flag
--r-------- 1 root root 60 Oct 11 04:20 /flag
-hacker@permissions~changing-file-ownership:~$ cat /flag 2>/dev/null || echo "no read perms (expected)"
-no read perms (expected)
-hacker@permissions~changing-file-ownership:~$ chown hacker /flag || sudo chown hacker /flag
-hacker@permissions~changing-file-ownership:~$ ls -l /flag
--r-------- 1 hacker root 60 Oct 11 04:20 /flag
+hacker@permissions~changing-file-ownership:~$ chown hacker /flag
+hacker@permissions~changing-file-ownership:~$ /challenge/run
+I have given you access to use the 'chown' command. Use it to enable the flag
+to be read!
 hacker@permissions~changing-file-ownership:~$ cat /flag
 pwn.college{QrzmRe4vQ4PPb0o2Ofz0W47pZ5U.QXxEjN0wCMwEzNzEzW}
 ```
 
 ### New Learnings
+chown command is used to change ownership of files. Format:  
+chown username filename
 
 ## 2. Groups and Files
 
@@ -36,6 +35,8 @@ pwn.college{UffZdyni-fLBEzuIml_MbunE6mC.QXxcjM1wCMwEzNzEzW}
 ```
 
 ### New Learnings
+id command is to see what groups the user is in. chgrp is used to change group ownership. Format:  
+chgrp group file
 
 ## 3. Fun Wiht Group Names
 
@@ -55,6 +56,7 @@ pwn.college{shPo4cF_8x10edKjQksJUQfWiNR.QXycjM1wCMwEzNzEzW}
 ```
 
 ### New Learnings
+The group name does not have to be the same as username.
 
 ## 4. Changing Permissions
 
@@ -74,6 +76,16 @@ pwn.college{ITwM1PqYcxEChXU2OJy1ufT1Tx4.QXzcjM1wCMwEzNzEzW}
 ```
 
 ### New Learnings
+12 permission bits for each file split into 4 sets of 4 bits. The last 3 groups are to show whether the onwer, group, everyone can read, write, execute the files.  
+r read  
+w write  
+x execute  
+chmod command is used to change file permissions. Format  
+chmod [options] mode [file]  
+Examples  
+u+r: adds read access to the user's permissions  
+g+wx: adds write and execute access to the group's permissions  
+o-w: removes write access for other users  
 
 ## 5. Executable Files
 
