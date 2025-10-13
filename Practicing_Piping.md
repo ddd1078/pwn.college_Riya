@@ -5,10 +5,12 @@
 ### Solve
 **flag** `pwn.college{AcGyPnyIR9Y4ZsM__LKhbbaTjIe.QX0YTN0wCMwEzNzEzW}`  
 To solve  
-`hacker@piping~redirecting-output:~$ echo PWN > COLLEGE
+```bash
+hacker@piping~redirecting-output:~$ echo PWN > COLLEGE
 Correct! You successfully redirected 'PWN' to the file 'COLLEGE'! Here is your
 flag:
-pwn.college{AcGyPnyIR9Y4ZsM__LKhbbaTjIe.QX0YTN0wCMwEzNzEzW}`
+pwn.college{AcGyPnyIR9Y4ZsM__LKhbbaTjIe.QX0YTN0wCMwEzNzEzW}
+```
 
 ### New Learnings
 '>' is used to redirect the output of the command to a particular file.  
@@ -19,7 +21,8 @@ Format: command argument > file
 ### Solve
 **flag** ` pwn.college{8kcmboE_9jhCmTa0CDAlXH8H6zq.QX1YTN0wCMwEzNzEzW}`  
 To solve  
-`hacker@piping~redirecting-more-output:~$ /challenge/run > myflag
+```bash
+hacker@piping~redirecting-more-output:~$ /challenge/run > myflag
 [INFO] WELCOME! This challenge makes the following asks of you:
 [INFO] - the challenge will check that output is redirected to a specific file path : myflag
 [INFO] - the challenge will output a reward file if all the tests pass : /flag
@@ -31,14 +34,16 @@ To solve
 [PASS] Success! You have satisfied all execution requirements.
 hacker@piping~redirecting-more-output:~$ cat myflag
 [FLAG] Here is your flag:
-[FLAG] pwn.college{8kcmboE_9jhCmTa0CDAlXH8H6zq.QX1YTN0wCMwEzNzEzW}`
+[FLAG] pwn.college{8kcmboE_9jhCmTa0CDAlXH8H6zq.QX1YTN0wCMwEzNzEzW}
+```
 
 ## 3. Appending output
 
 ### Solve
 **flag** `pwn.college{YC7zRelEJiZbKiKoWXZ7vdSH5Cv.QX3ATO0wCMwEzNzEzW}`
 To solve  
-`hacker@piping~appending-output:~$ /challenge/run >> /home/hacker/the-flag
+```bash
+hacker@piping~appending-output:~$ /challenge/run >> /home/hacker/the-flag
 [INFO] WELCOME! This challenge makes the following asks of you:
 [INFO] - the challenge will check that output is redirected to a specific file path : /home/hacker/the-flag
 [HYPE] ONWARDS TO GREATNESS!
@@ -63,7 +68,8 @@ pwn.college{YC7zRelEJiZbKiKoWXZ7vdSH5Cv.QX3ATO0wCMwEzNzEzW}
 If you only see the second half above, you redirected in *truncate* mode (>)
 rather than *append* mode (>>), and so the write of the second half to stdout
 overwrote the initial write of the first half directly to the file. Try append
-mode!`
+mode!
+```
 
 ### New Learnings
 Use >> (not >) to append command output so you don't overwrite earlier results.
@@ -73,10 +79,12 @@ Use >> (not >) to append command output so you don't overwrite earlier results.
 ### Solve
 **flag** `pwn.college{QwkTd-9lj2WrVZvmq5tHRiJdkcF.QX3YTN0wCMwEzNzEzW}`
 To solve  
-`hacker@piping~redirecting-errors:~$ /challenge/run >>myflag 2>instructions
+```bash
+hacker@piping~redirecting-errors:~$ /challenge/run >>myflag 2>instructions
 hacker@piping~redirecting-errors:~$ cat myflag
 [FLAG] Here is your flag:
-[FLAG] pwn.college{QwkTd-9lj2WrVZvmq5tHRiJdkcF.QX3YTN0wCMwEzNzEzW}`
+[FLAG] pwn.college{QwkTd-9lj2WrVZvmq5tHRiJdkcF.QX3YTN0wCMwEzNzEzW}
+```
 
 ### New Learnings
 File descriptor is a number that describes a communication channel in linux.  
@@ -89,20 +97,23 @@ FD 2: Standard error
 ### Solve
 **flag** `pwn.college{8bZVlPG2tVcv_njvqQMkiQVtFwF.QXwcTN0wCMwEzNzEzW}`  
 To solve  
-`hacker@piping~redirecting-input:~$ echo COLLEGE > PWN
+```bash
+hacker@piping~redirecting-input:~$ echo COLLEGE > PWN
 hacker@piping~redirecting-input:~$ /challenge/run < PWN
 Reading from standard input...
 Correct! You have redirected the PWN file into my standard input, and I read
 the value 'COLLEGE' out of it!
 Here is your flag:
-pwn.college{8bZVlPG2tVcv_njvqQMkiQVtFwF.QXwcTN0wCMwEzNzEzW}`
+pwn.college{8bZVlPG2tVcv_njvqQMkiQVtFwF.QXwcTN0wCMwEzNzEzW}
+```
 
 ## 6. Grepping stored results
 
 ### Solve
 **flag** `pwn.college{UNlE8GbAK348lMSlyjTY0HGnio4.QX4EDO0wCMwEzNzEzW}`  
 To solve  
-`hacker@piping~grepping-stored-results:~$ /challenge/run > /tmp/data.txt
+```bash
+hacker@piping~grepping-stored-results:~$ /challenge/run > /tmp/data.txt
 [INFO] WELCOME! This challenge makes the following asks of you:
 [INFO] - the challenge will check that output is redirected to a specific file path : /tmp/data.txt
 [INFO] - the challenge will output a reward file if all the tests pass : /challenge/.data.txt
@@ -116,14 +127,16 @@ To solve
 [PASS] The file at the other end of my stdout looks okay!
 [PASS] Success! You have satisfied all execution requirements.
 hacker@piping~grepping-stored-results:~$ grep pwn.college /tmp/data.txt
-pwn.college{UNlE8GbAK348lMSlyjTY0HGnio4.QX4EDO0wCMwEzNzEzW}`
+pwn.college{UNlE8GbAK348lMSlyjTY0HGnio4.QX4EDO0wCMwEzNzEzW}
+```
 
 ## 7. Grepping live output
 
 ### Solve
 **flag** `pwn.college{UO2rmpXUxGJn4x_p7PaxfYdscy2.QX5EDO0wCMwEzNzEzW}`  
 To solve  
-`hacker@piping~grepping-live-output:~$ /challenge/run | grep pwn.college
+```bash
+hacker@piping~grepping-live-output:~$ /challenge/run | grep pwn.college
 [INFO] WELCOME! This challenge makes the following asks of you:
 [INFO] - the challenge checks for a specific process at the other end of stdout : grep
 [INFO] - the challenge will output a reward file if all the tests pass : /challenge/.data.txt
@@ -137,14 +150,16 @@ To solve
 [INFO] To pass the checks, the executable must be grep.
 [PASS] You have passed the checks on the process on the other end of my stdout!
 [PASS] Success! You have satisfied all execution requirements.
-pwn.college{UO2rmpXUxGJn4x_p7PaxfYdscy2.QX5EDO0wCMwEzNzEzW}`
+pwn.college{UO2rmpXUxGJn4x_p7PaxfYdscy2.QX5EDO0wCMwEzNzEzW}
+```
 
 ## 8. Grepping errors
 
 ### Solve
 **flag** `pwn.college{8RKuBnuAEjIpcFjbdppY4HTXESg.QX1ATO0wCMwEzNzEzW}`  
 To solve  
-`hacker@piping~grepping-errors:~$ /challenge/run 2>&1 | grep pwn.college
+```bash
+hacker@piping~grepping-errors:~$ /challenge/run 2>&1 | grep pwn.college
 [INFO] WELCOME! This challenge makes the following asks of you:
 [INFO] - the challenge checks for a specific process at the other end of stderr : grep
 [INFO] - the challenge will output a reward file if all the tests pass : /challenge/.data.txt
@@ -158,22 +173,40 @@ To solve
 [INFO] To pass the checks, the executable must be grep.
 [PASS] You have passed the checks on the process on the other end of my stderr!
 [PASS] Success! You have satisfied all execution requirements.
-pwn.college{8RKuBnuAEjIpcFjbdppY4HTXESg.QX1ATO0wCMwEzNzEzW}`
+pwn.college{8RKuBnuAEjIpcFjbdppY4HTXESg.QX1ATO0wCMwEzNzEzW}
+```
 
 ## 9. Filtering with grep -v
 
 ### Solve
 **flag** `pwn.college{gEYfnhiuhtmNwMAhYnz7dbYSGfR.0FOxEzNxwCMwEzNzEzW}`  
 To solve  
-`hacker@piping~filtering-with-grep-v:~$ /challenge/run | grep -v DECOY
-pwn.college{gEYfnhiuhtmNwMAhYnz7dbYSGfR.0FOxEzNxwCMwEzNzEzW}`
+```bash
+hacker@piping~filtering-with-grep-v:~$ /challenge/run | grep -v DECOY
+pwn.college{gEYfnhiuhtmNwMAhYnz7dbYSGfR.0FOxEzNxwCMwEzNzEzW}
+```
 
 ## 10. Duplicating piped data with tee
 
 ### Solve
-**flag** `  
+**flag** `pwn.college{QVNV4Rz4sHsYUHLzk8JkHQuBt2h.QXxITO0wCMwEzNzEzW}`
 To solve  
+```bash
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn | tee /dev/tty | /challenge/college
+Processing...
+Usage: /challenge/pwn --secret [SECRET_ARG]
 
+SECRET_ARG should be "QVNV4Rz4"
+The input to 'college' does not contain the correct secret code! This code
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn --secret QVN
+V4Rz4 | /challenge/college
+Processing...
+Correct! Passing secret value to /challenge/college...
+Great job! Here is your flag:
+pwn.college{QVNV4Rz4sHsYUHLzk8JkHQuBt2h.QXxITO0wCMwEzNzEzW}
+```
 
 ## 11. Process substitution for input
 
@@ -183,6 +216,9 @@ To solve
 `hacker@piping~process-substitution-for-input:~$ diff <(/challenge/print_decoys) <(/challenge/print_decoys_and_flag)
 8a9
  pwn.college{MgVg_dLrnbHKPSYx-UiXgKCdSyq.0lNwMDOxwCMwEzNzEzW}`
+
+ ### New Learnings
+ Process substitution
 
 ## 12. Writing to multiple programs
 
