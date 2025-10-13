@@ -11,6 +11,9 @@ Yes! You chained /challenge/pwn and /challenge/college! Here is your flag:
 pwn.college{Qaun68M0133ro0IGpWmpHTmZAbG.QX1UDO0wCMwEzNzEzW}
 ```
 
+### New Learnings
+Commands can be chained by using ;
+
 ## 2. Building on Success
 
 ### Solve
@@ -20,6 +23,11 @@ pwn.college{Qaun68M0133ro0IGpWmpHTmZAbG.QX1UDO0wCMwEzNzEzW}
 hacker@chaining~building-on-success:~$ /challenge/first-success && /challenge/second
 Nice chaining! Flag: pwn.college{kncWxebYCj3t2wnuHYAxmQ8ifIM.0lM0MDOxwCMwEzNzEzW}
 ```
+### New Learnings
+&& is a logical operation which is used with format:  
+arg1 && arg2  
+arg2 will execute only if arg1 is true. 
+
 ## 3. Handling Failure
 ### Solve
 **Flag** ` pwn.college{Qf4VTesYulFAPvAYV2CfCtCdg-c.01M0MDOxwCMwEzNzEzW}`
@@ -28,6 +36,9 @@ Nice chaining! Flag: pwn.college{kncWxebYCj3t2wnuHYAxmQ8ifIM.0lM0MDOxwCMwEzNzEzW
 hacker@chaining~handling-failure:~$ /challenge/first-failure || /challenge/second
 Nice chaining! Flag: pwn.college{Qf4VTesYulFAPvAYV2CfCtCdg-c.01M0MDOxwCMwEzNzEzW}
 ```
+
+### New Learnings
+|| operator will only run arg2 if arg1 fails
 
 ## 4. Your First Shell Script
 
