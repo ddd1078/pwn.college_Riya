@@ -26,7 +26,17 @@ pwn.college{0DOOzvaUWHdzLRIm5nV-q7o6Srr.QX4MDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
-
+ps that is process snapshot/status lists running processes. The process id or PID is the numerical identifier of each process.  
+Standard Syntax:  
+-e for every process  
+-f full format of processes   
+-ef combined  
+BSD Syntax:  
+a lists processes for all users  
+u gives user readable output  
+x lists processes that are not running  
+aux combined  
+Both ps -ef and ps aux display user, PID, TTY, start time and total utilized cpu time. ps -ef outputs the PPID, parent process id ps aux outputs the percentage of total system CPU and memory utilized.
 
 ## 2. Killing Processes
 
@@ -46,6 +56,7 @@ pwn.college{MErYb5uXxvk6LlQyxCu8e1xBmm7.QXyQDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
+The kill command is used to terminate a process and the sleep command is used to hang a process. 
 
 ## 3. Interrupting Processes
 
@@ -62,6 +73,7 @@ pwn.college{w_6zdjIJv7RGorQCFBYD2Mhm8xJ.QXzQDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
+ctrl ^C is a hotkey for getting rid of the process that is clogging the terminal.
 
 ## 4. Killing Misbehaving Processes
 
@@ -209,8 +221,6 @@ Sending the flag to /tmp/flag_fifo!
 pwn.college{IRFU-2_jvE2vPHON7hRkn-cfjcK.0FNzMDOxwCMwEzNzEzW}
 ```
 
-### New Learnings
-
 ## 5. Suspending Processes
 
 ### Solve
@@ -231,6 +241,7 @@ pwn.college{k3uNdZWicslNeWMHZlEtvRyHNw1.QX1QDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
+crtl z can be used to suspend processes to the background.
 
 ## 6. Resuming Processes
 
@@ -253,6 +264,7 @@ Goodbye!
 ```
 
 ### New Learnings
+fg is used to resume a suspended process in the foreground.
 
 ## 7. Backrounding Processes
 
@@ -265,8 +277,8 @@ I'll only give you the flag if there's already another copy of me running *and
 not suspended* in this terminal... Let's check!
 
 UID          PID STAT CMD
-root         139 S+   bash /challenge/run
-root         141 R+   ps -o user=UID,pid,stat,cmd
+root         138 S+   bash /challenge/run
+root         140 R+   ps -o user=UID,pid,stat,cmd
 
 I don't see a second me!
 
@@ -276,7 +288,7 @@ Ctrl-Z (and resume me in the background with 'bg') or, if you're not ready to
 do that for whatever reason, just hit Enter and I'll exit!
 ^Z
 [1]+  Stopped                 /challenge/run
-hacker@processes~backgrounding-processes:~$ bg
+hacker@processes~backgrounding-processes:~$ bg /challenge/run
 [1]+ /challenge/run &
 hacker@processes~backgrounding-processes:~$
 
@@ -285,21 +297,23 @@ Yay, I'm now running the background! Because of that, this text will probably
 overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times
 to scroll this text out.
 
+hacker@processes~backgrounding-processes:~$
 hacker@processes~backgrounding-processes:~$ /challenge/run
 I'll only give you the flag if there's already another copy of me running *and
 not suspended* in this terminal... Let's check!
 
 UID          PID STAT CMD
-root         139 S    bash /challenge/run
-root         149 S    sleep 6h
-root         150 S+   bash /challenge/run
-root         152 R+   ps -o user=UID,pid,stat,cmd
+root         138 S    bash /challenge/run
+root         148 S    sleep 6h
+root         149 S+   bash /challenge/run
+root         151 R+   ps -o user=UID,pid,stat,cmd
 
 Yay, I found another version of me running in the background! Here is the flag:
 pwn.college{Erc2cxU-2kwMHA_D3DHtXC23SWo.QX3QDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
+bg is used to run process in the background.
 
 ## 8. Foregrounding Processes
 
@@ -314,7 +328,7 @@ background me with Ctrl-Z (and resume me in the background with 'bg') or, if
 you're not ready to do that for whatever reason, just hit Enter and I'll exit!
 ^Z
 [1]+  Stopped                 /challenge/run
-hacker@processes~foregrounding-processes:~$ bg
+hacker@processes~foregrounding-processes:~$ bg /challenge/run
 [1]+ /challenge/run &
 hacker@processes~foregrounding-processes:~$
 
@@ -324,7 +338,7 @@ overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times
 to scroll this text out. After that, resume me into the foreground with 'fg';
 I'll wait.
 
-hacker@processes~foregrounding-processes:~$ fg
+hacker@processes~foregrounding-processes:~$ fg /challenge/run
 /challenge/run
 YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
 
@@ -332,6 +346,7 @@ pwn.college{scUDm67fPbZRLOYBzsktZ-xk13p.QX4QDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
+A backgrounded process can be foregrounded.
 
 ## 9. Starting Backrounded Processes
 
@@ -342,9 +357,8 @@ pwn.college{scUDm67fPbZRLOYBzsktZ-xk13p.QX4QDO0wCMwEzNzEzW}
 hacker@processes~starting-backgrounded-processes:~$ /challenge/run
 You've started me in the foreground! You must start me in the background (by
 appending '&' to the command) to get the flag!
-hacker@processes~starting-backgrounded-processes:~$ /challenge/run & [1] 147
-[1] 142
-bash: [1]: command not found
+hacker@processes~starting-backgrounded-processes:~$ /challenge/run &
+[1] 140
 hacker@processes~starting-backgrounded-processes:~$
 
 
@@ -356,6 +370,7 @@ pwn.college{c3pa42ZWwg7lLp_zq07KN_B2OvT.QX5QDO0wCMwEzNzEzW}
 ```
 
 ### New Learnings
+A process does not have to be suspended to be started in the background. To do that just add & to end.
 
 ## 10. Process Exit Codes
 
@@ -366,29 +381,12 @@ pwn.college{c3pa42ZWwg7lLp_zq07KN_B2OvT.QX5QDO0wCMwEzNzEzW}
 hacker@processes~process-exit-codes:~$ /challenge/get-code
 Exiting with an error code!
 hacker@processes~process-exit-codes:~$ echo $?
-66
-hacker@processes~process-exit-codes:~$ /challenge/submit-code $?
-Incorrect... Make sure to use $? immediately after running /challenge/get-code.
-Your shell will overwrite the $? variable with the exit value of any other
-command you run!
-hacker@processes~process-exit-codes:~$ /challenge/get-code $?
-Exiting with an error code!
-hacker@processes~process-exit-codes:~$ echo $?
-72
-hacker@processes~process-exit-codes:~$ /challenge/submit-code $?
-Incorrect... Make sure to use $? immediately after running /challenge/get-code.
-Your shell will overwrite the $? variable with the exit value of any other
-command you run!
-hacker@processes~process-exit-codes:~$ /challenge/72 $?
-bash: /challenge/72: No such file or directory
-hacker@processes~process-exit-codes:~$ /challenge/get-code && /challenge/submit-code $?
-Exiting with an error code!
-hacker@processes~process-exit-codes:~$  /challenge/get-code
-/challenge/submit-code $?
-Exiting with an error code!
+203
+hacker@processes~process-exit-codes:~$ /challenge/submit-code 203
 CORRECT! Here is your flag:
 pwn.college{opBfapUWsupmQUx0eM7l3bgrv3D.QX5YDO1wCMwEzNzEzW}
 ```
 
 ### New Learnings
-
+Every command exits with an exit code. To see the last exit code:  
+ech0 %?
